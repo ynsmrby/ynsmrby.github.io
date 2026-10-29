@@ -96,7 +96,7 @@
 <main class="wrap">
 
   <h1>Privacy Policy</h1>
-  <p class="updated">Odak &middot; Beydemir Technology &middot; Last updated: August 18, 2026</p>
+  <p class="updated">Odak &middot; Beydemir Technology &middot; Last updated: October 29, 2026</p>
 
   <div class="intro">
     <p>
@@ -272,6 +272,32 @@
     App does not use a remote/push notification infrastructure.
   </p>
 
+  <h3>2.9. Call notes (Odak Plus, only if you turn it on)</h3>
+  <p>
+    If you turn on <strong>Call notes</strong> in Settings, Odak shows a small bubble on
+    screen during phone and WhatsApp calls, so you can save a note or a task without
+    leaving the call. The feature is off by default and needs two special accesses that
+    you grant yourself in your device settings:
+  </p>
+  <ul>
+    <li><strong>Notification access:</strong> used only to notice that a call has started
+        or ended, from the ongoing call notification of your phone app or WhatsApp, and to
+        read the contact name or number shown in that notification. Every other
+        notification is ignored the moment it arrives; it is not read, stored, or sent
+        anywhere.</li>
+    <li><strong>Display over other apps:</strong> used only to show the bubble on top of
+        the call screen.</li>
+  </ul>
+  <p>
+    Odak never listens to, records, or transcribes your calls, and does not access call
+    audio, your call history, or your address book for this feature. The contact name is
+    used only to title the note or task you choose to save; that note or task is stored on
+    your device like any other (and is included in your encrypted cloud backup only if you
+    have enabled it). Nothing about your calls is sent to us or to any third party. You can
+    turn the feature off at any time in Settings &gt; Connections, and revoke both accesses
+    from your device settings.
+  </p>
+
   <h2>3. Third-party services</h2>
   <p>Odak uses the following third-party services. Each is governed by its own privacy policy:</p>
   <ul>
@@ -292,6 +318,7 @@
     <li>create a required user account or request an email address/password to use its core features,</li>
     <li>collect or access your location unless you explicitly enable location-based reminders,</li>
     <li>access your contacts beyond the single contact you explicitly pick for a task action,</li>
+    <li>listen to, record, or access the audio of your calls, or read your call history,</li>
     <li>store your payment or card details (handled entirely by Google Play Billing),</li>
     <li>use any analytics or crash-reporting infrastructure of its own.</li>
   </ul>
@@ -318,6 +345,11 @@
     <li><strong>VIBRATE:</strong> Used for haptic feedback.</li>
     <li><strong>USE_FULL_SCREEN_INTENT:</strong> Allows important reminders to be shown as a
         full-screen notification.</li>
+    <li><strong>Notification access (BIND_NOTIFICATION_LISTENER_SERVICE):</strong> Used only
+        by the Call notes feature, and only once you enable it and grant access, to detect
+        calls from the call notification (see section 2.9).</li>
+    <li><strong>SYSTEM_ALERT_WINDOW (display over other apps):</strong> Used only by the
+        Call notes feature, to show the bubble over the call screen (see section 2.9).</li>
   </ul>
   <p>
     None of these permissions are used to collect data in the background beyond the specific
