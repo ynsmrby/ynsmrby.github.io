@@ -3,30 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Odak</title>
-<meta name="description" content="Privacy Policy for the Odak Android app by Beydemir Technology: what data is collected, how it is used, third-party services, permissions, and your rights.">
+<title>Privacy Policies — Beydemir Technology</title>
+<meta name="description" content="Privacy policies for Beydemir Technology's Android apps: Odak, NotifyOS, Dead Code and Ring Rider.">
+<meta name="google-site-verification" content="d7MsoSQkdF9Dp04asFFYpNcnyYJlKye6csLSpCcddL4" />
+<link rel="icon" href="assets/logo.png" type="image/png">
+
 <style>
   :root {
-    --bg: #fbfaf8;
-    --surface: #ffffff;
-    --border: #e6e2db;
-    --text: #1c1b19;
-    --muted: #6b6760;
-    --accent: #2f6f5e;
-    --accent-soft: #eef4f1;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #131311;
-      --surface: #1c1c1a;
-      --border: #302f2c;
-      --text: #f0eeea;
-      --muted: #a39e95;
-      --accent: #7fc4ae;
-      --accent-soft: #1e2a26;
-    }
+    --bg: #0e1426;
+    --bg-2: #131b33;
+    --surface: #182241;
+    --border: #26315a;
+    --text: #f4eee4;
+    --muted: #b7ae9f;
+    --accent: #ff9a3c;
+    --accent-2: #ffb547;
+    --accent-ink: #1a1206;
   }
   * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body {
     margin: 0;
     background: var(--bg);
@@ -34,70 +29,103 @@
     font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 0 22px; }
-
-  header.site { border-bottom: 1px solid var(--border); background: var(--surface); }
-  .bar {
-    display: flex; align-items: center; justify-content: space-between;
-    gap: 16px; padding: 16px 0; flex-wrap: wrap;
-  }
-  .brand {
-    display: flex; align-items: center; gap: 10px;
-    font-weight: 700; font-size: 19px; letter-spacing: -0.01em;
-    color: var(--text); text-decoration: none;
-  }
-  .mark {
-    width: 30px; height: 30px; border-radius: 9px;
-    background: var(--accent); color: #fff;
-    display: grid; place-items: center; font-size: 15px; font-weight: 800;
-  }
-  @media (prefers-color-scheme: dark) { .mark { color: #10201b; } }
-  nav a { color: var(--muted); text-decoration: none; font-size: 14px; margin-left: 18px; }
-  nav a:hover { color: var(--accent); text-decoration: underline; }
-
-  h1 { font-size: 29px; line-height: 1.25; margin: 46px 0 6px; letter-spacing: -0.02em; }
-  .updated { color: var(--muted); font-size: 14px; margin: 0 0 26px; }
-  h2 { font-size: 19px; margin: 38px 0 10px; letter-spacing: -0.01em; }
-  h3 { font-size: 16px; margin: 24px 0 8px; }
-  p { margin: 0 0 14px; }
-  ul { margin: 0 0 14px; padding-left: 20px; }
-  li { margin-bottom: 8px; }
   a { color: var(--accent); }
-  code { font-size: 0.92em; background: var(--accent-soft); padding: 1px 5px; border-radius: 4px; }
+  code { background: var(--bg-2); border: 1px solid var(--border); border-radius: 6px; padding: 1px 6px; font-size: 0.9em; }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 0 22px; }
 
-  .intro {
-    background: var(--accent-soft); border: 1px solid var(--border);
-    border-radius: 12px; padding: 18px 20px; margin-bottom: 8px;
+  header.site {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(14, 20, 38, 0.86);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
   }
-  .intro p:last-child { margin-bottom: 0; }
+  .bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 12px; padding-bottom: 12px; flex-wrap: wrap; }
+  .brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 700; font-size: 18px; }
+  .brand img { width: 34px; height: 34px; border-radius: 9px; }
+  nav a { color: var(--muted); text-decoration: none; font-size: 14px; margin-left: 18px; }
+  nav a:hover { color: var(--accent); }
 
-  hr { border: 0; border-top: 1px solid var(--border); margin: 40px 0 0; }
+  .page-head { padding: 52px 0 26px; }
+  h1 { font-size: clamp(28px, 4vw, 38px); margin: 0 0 10px; letter-spacing: -0.02em; }
+  .page-head p { color: var(--muted); margin: 0 0 22px; }
 
-  footer.site {
-    border-top: 1px solid var(--border); background: var(--surface);
-    padding: 26px 0; margin-top: 46px; font-size: 14px; color: var(--muted);
+  .toc { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-bottom: 18px; }
+  .toc a {
+    display: flex; align-items: center; gap: 10px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 12px; text-decoration: none; color: var(--text); font-weight: 600; font-size: 15px;
   }
-  footer.site a { color: var(--accent); }
-  .footrow { display: flex; flex-wrap: wrap; gap: 10px 22px; justify-content: space-between; }
+  .toc a:hover { border-color: var(--accent); }
+  .toc img { width: 36px; height: 36px; border-radius: 9px; }
+
+  .common { background: var(--bg-2); border: 1px solid var(--border); border-radius: 16px; padding: 18px 20px; margin: 10px 0 0; }
+  .common p { margin: 0 0 8px; color: var(--muted); }
+  .common p:last-child { margin: 0; }
+
+  section.policy { padding: 46px 0 20px; border-top: 1px solid var(--border); margin-top: 40px; scroll-margin-top: 70px; }
+  .policy-head { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
+  .policy-head img { width: 60px; height: 60px; border-radius: 14px; flex-shrink: 0; }
+  .policy-head h2 { margin: 0; font-size: 26px; line-height: 1.2; }
+  .policy-head .meta { color: var(--muted); font-size: 14px; margin: 4px 0 0; }
+
+  .policy h3 { font-size: 19px; margin: 30px 0 8px; color: var(--accent-2); }
+  .policy h4 { font-size: 16px; margin: 20px 0 6px; }
+  .policy p { margin: 0 0 12px; }
+  .policy ul { margin: 6px 0 14px; padding-left: 22px; }
+  .policy li { margin: 5px 0; }
+  .policy li::marker { color: var(--accent); }
+  .policy table { width: 100%; border-collapse: collapse; margin: 8px 0 16px; font-size: 15px; }
+  .policy th, .policy td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+  .intro { color: var(--muted); }
+  .top { display: inline-block; margin-top: 18px; font-size: 14px; color: var(--muted); text-decoration: none; }
+  .top:hover { color: var(--accent); }
+
+  footer.site { border-top: 1px solid var(--border); padding: 28px 0 40px; margin-top: 50px; color: var(--muted); font-size: 14px; }
+  .foot { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  footer a { color: var(--muted); text-decoration: none; margin-right: 16px; }
+  footer a:hover { color: var(--accent); }
+  @media (max-width: 560px) { nav a { margin-left: 0; margin-right: 14px; } }
 </style>
 </head>
 <body>
 
 <header class="site">
   <div class="wrap bar">
-    <a class="brand" href="index.html"><span class="mark">O</span> Odak</a>
+    <a class="brand" href="./"><img src="assets/logo.png" alt="">Beydemir Technology</a>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="index.html#backup">Google Drive backup</a>
+      <a href="./#apps">Apps</a>
+      <a href="./#youtube">YouTube</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="./#contact">Contact</a>
     </nav>
   </div>
 </header>
 
 <main class="wrap">
+  <div class="page-head" id="top">
+    <h1>Privacy Policies</h1>
+    <p>Each of our apps has its own privacy policy below. Pick an app to jump to its full policy.</p>
+    <div class="toc">
+      <a href="#odak"><img src="assets/icons/odak.png" alt="">Odak</a>
+      <a href="#notifyos"><img src="assets/icons/notifyos.png" alt="">NotifyOS</a>
+      <a href="#deadcode"><img src="assets/icons/deadcode.png" alt="">Dead Code</a>
+      <a href="#ringrider"><img src="assets/icons/ringrider.png" alt="">Ring Rider</a>
+    </div>
+    <div class="common">
+      <p><strong>Developer:</strong> Beydemir Technology &middot; <strong>Contact:</strong> <a href="mailto:beydemir.technology@gmail.com">beydemir.technology@gmail.com</a></p>
+      <p>We do not sell personal data from any of our apps. Each policy below applies only to the app it names.</p>
+    </div>
+  </div>
 
-  <h1>Privacy Policy</h1>
-  <p class="updated">Odak &middot; Beydemir Technology &middot; Last updated: October 29, 2026</p>
-
+  <!-- ───────────────────────── ODAK ───────────────────────── -->
+  <section class="policy" id="odak">
+    <div class="policy-head">
+      <img src="assets/icons/odak.png" alt="Odak icon">
+      <div>
+        <h2>Odak — Privacy Policy</h2>
+        <p class="meta">Package <code>com.beydemir.odak</code> &middot; Last updated: October 29, 2026</p>
+      </div>
+    </div>
   <div class="intro">
     <p>
       This Privacy Policy explains how Beydemir Technology ("we", "us", "the developer")
@@ -112,7 +140,7 @@
     </p>
   </div>
 
-  <h2>1. What this policy covers</h2>
+  <h3>1. What this policy covers</h3>
   <p>
     Odak is a productivity app offering task/to-do management, a calendar, notes,
     location-based reminders, an AI-powered chat feature called "AI Coach", optional cloud
@@ -120,9 +148,9 @@
     the App collects, how it is used, who it may be shared with, and what rights you have.
   </p>
 
-  <h2>2. Data we collect and how we use it</h2>
+  <h3>2. Data we collect and how we use it</h3>
 
-  <h3>2.1. Data stored locally on your device</h3>
+  <h4>2.1. Data stored locally on your device</h4>
   <p>
     The following data is stored only on your own device (in a local database and local
     preference storage) and is never sent to any server operated by us:
@@ -154,7 +182,7 @@
     account. This process is managed by Google; we do not have access to these backups.
   </p>
 
-  <h3>2.2. Data sent to third parties for the AI Coach feature</h3>
+  <h4>2.2. Data sent to third parties for the AI Coach feature</h4>
   <p>
     When you chat with AI Coach or use smart/voice task entry, the following information is
     sent over the internet to third-party AI providers — Google's Gemini API and/or Groq API
@@ -180,7 +208,7 @@
     response mechanism, and in that case no data is sent to any external service.
   </p>
 
-  <h3>2.3. Location data (only if you turn it on)</h3>
+  <h4>2.3. Location data (only if you turn it on)</h4>
   <p>
     The location-based reminders feature accesses your location only after you enable it
     yourself. To notify you when you approach or leave a place you've saved (Home, Work,
@@ -202,7 +230,7 @@
         we do not access your location.</li>
   </ul>
 
-  <h3>2.4. Cloud backup (optional, only if you turn it on)</h3>
+  <h4>2.4. Cloud backup (optional, only if you turn it on)</h4>
   <p>
     When you enable cloud backup, an encrypted (AES-256) copy of your data is uploaded to a
     private, app-specific space (<code>appDataFolder</code>) in your own Google Drive
@@ -222,7 +250,7 @@
     never transferred to third parties.
   </p>
 
-  <h3>2.5. Subscriptions and purchases (Odak Plus)</h3>
+  <h4>2.5. Subscriptions and purchases (Odak Plus)</h4>
   <p>
     Odak offers an optional subscription ("Odak Plus") and one-time purchase processed
     through Google Play Billing. Payment is handled entirely by Google; we never receive or
@@ -231,7 +259,7 @@
     unlock the corresponding features.
   </p>
 
-  <h3>2.6. Contacts (address book)</h3>
+  <h4>2.6. Contacts (address book)</h4>
   <p>
     In the "task actions" feature (calling/messaging/emailing directly from a task with one
     tap), you pick a contact via the system contact picker. Only the selected contact's
@@ -239,7 +267,7 @@
     action. We do not read, copy, or send your entire address book to any server.
   </p>
 
-  <h3>2.7. Advertising (Google AdMob)</h3>
+  <h4>2.7. Advertising (Google AdMob)</h4>
   <p>
     To support the App being offered free of charge, the App displays banner, interstitial,
     rewarded, and app-open ads through Google AdMob (Google Mobile Ads SDK). No ads are shown
@@ -264,7 +292,7 @@
     (Google Settings &gt; Ads).
   </p>
 
-  <h3>2.8. Notifications</h3>
+  <h4>2.8. Notifications</h4>
   <p>
     Task reminders and daily/weekly summaries are scheduled entirely on your device using
     Android's local notification and alarm systems, and (for location-based reminders) the
@@ -272,7 +300,7 @@
     App does not use a remote/push notification infrastructure.
   </p>
 
-  <h3>2.9. Call notes (Odak Plus, only if you turn it on)</h3>
+  <h4>2.9. Call notes (Odak Plus, only if you turn it on)</h4>
   <p>
     If you turn on <strong>Call notes</strong> in Settings, Odak shows a small bubble on
     screen during phone and WhatsApp calls, so you can save a note or a task without
@@ -298,7 +326,7 @@
     from your device settings.
   </p>
 
-  <h2>3. Third-party services</h2>
+  <h3>3. Third-party services</h3>
   <p>Odak uses the following third-party services. Each is governed by its own privacy policy:</p>
   <ul>
     <li>Google Play Billing (subscriptions/purchases) — policies.google.com/privacy</li>
@@ -312,7 +340,7 @@
     <li>OpenStreetMap Overpass (nearby place search, premium/optional) — openstreetmap.org/copyright</li>
   </ul>
 
-  <h2>4. Data we do not collect</h2>
+  <h3>4. Data we do not collect</h3>
   <p>For clarity, Odak does not:</p>
   <ul>
     <li>create a required user account or request an email address/password to use its core features,</li>
@@ -323,14 +351,14 @@
     <li>use any analytics or crash-reporting infrastructure of its own.</li>
   </ul>
 
-  <h2>5. Data sharing and sale</h2>
+  <h3>5. Data sharing and sale</h3>
   <p>
     We do not sell your personal data. We share data only with the service providers listed
     in section 3, only to the extent necessary to provide the relevant feature, and only for
     that purpose. We may disclose data where required by applicable law.
   </p>
 
-  <h2>6. Permissions used</h2>
+  <h3>6. Permissions used</h3>
   <p>The App requests the following Android permissions in order to provide its features:</p>
   <ul>
     <li><strong>INTERNET:</strong> Required to generate AI Coach responses and process subscriptions.</li>
@@ -356,7 +384,7 @@
     feature they enable.
   </p>
 
-  <h2>7. Data security</h2>
+  <h3>7. Data security</h3>
   <p>
     Data stored locally on your device is protected by the standard app-level protections
     provided by the Android operating system (app-specific private storage). Secure Notes and
@@ -366,7 +394,7 @@
     over the internet or electronic storage can be guaranteed to be 100% secure.
   </p>
 
-  <h2>8. Data retention and deletion</h2>
+  <h3>8. Data retention and deletion</h3>
   <p>
     Your tasks, notes, saved places, and chat history remain stored on your device until you
     delete them or uninstall the App. You can delete this data by:
@@ -389,7 +417,7 @@
     on their side.
   </p>
 
-  <h2>9. Children's privacy</h2>
+  <h3>9. Children's privacy</h3>
   <p>
     Odak is not directed at children under the age of 13, and we do not knowingly collect data
     from users in this age group. If you believe a child under 13 has provided us with data,
@@ -397,7 +425,7 @@
     promptly.
   </p>
 
-  <h2>10. Your rights</h2>
+  <h3>10. Your rights</h3>
   <p>
     Because most of your data is stored locally on your device, you directly control access to,
     correction of, and deletion of your data (through the App's interface and your device
@@ -407,14 +435,14 @@
     or ask questions.
   </p>
 
-  <h2>11. Contact us</h2>
+  <h3>11. Contact us</h3>
   <p>If you have questions about this Privacy Policy, you can reach us at:</p>
   <ul>
     <li>Developer: <strong>Beydemir Technology</strong></li>
     <li>Email: <a href="mailto:beydemir.technology@gmail.com">beydemir.technology@gmail.com</a></li>
   </ul>
 
-  <h2>12. Changes to this policy</h2>
+  <h3>12. Changes to this policy</h3>
   <p>
     We may update this Privacy Policy from time to time. If we make material changes, we will
     post the updated policy on this page and update the "Last updated" date at the top. Your
@@ -423,16 +451,272 @@
   </p>
 
   <hr>
+    <a class="top" href="#top">↑ Back to all policies</a>
+  </section>
+
+  <!-- ───────────────────────── NOTIFYOS ───────────────────────── -->
+  <section class="policy" id="notifyos">
+    <div class="policy-head">
+      <img src="assets/icons/notifyos.png" alt="NotifyOS icon">
+      <div>
+        <h2>NotifyOS — Privacy Policy</h2>
+        <p class="meta">Package <code>com.beydemirtechnology.notifyos</code> &middot; Last updated: September 2026</p>
+      </div>
+    </div>
+
+    <h3>Summary</h3>
+    <p>NotifyOS does not collect any data. There is nothing to summarize beyond that, but here are the details anyway.</p>
+
+    <h3>What data is collected</h3>
+    <p><strong>None, off your device.</strong> NotifyOS does not have the <code>INTERNET</code> permission — this is a deliberate, verifiable architectural choice, not a policy promise. The app cannot open a network connection even if it wanted to; you can confirm this yourself by checking the app's permissions in Android Settings, or by inspecting the APK's declared permissions.</p>
+
+    <h3>What is stored on your device</h3>
+    <p>To do its job (managing your notifications with rules you create), NotifyOS stores the following <strong>locally, in the app's private storage</strong>:</p>
+    <ul>
+      <li>Captured notifications (an archive you control — searchable, deletable)</li>
+      <li>The rules, groups, tags, and templates you create</li>
+      <li>Vibration patterns you record or customize</li>
+      <li>App usage statistics derived from notifications (e.g. how many were silenced) — used only to show you your own stats and, if enabled, to learn which notifications you tend to act on</li>
+      <li>Your app settings and preferences</li>
+      <li>A backup file, only if and when you explicitly export one to a location you choose</li>
+    </ul>
+    <p>None of this data is transmitted anywhere. It stays on your device.</p>
+
+    <h3>Who your data is shared with</h3>
+    <p><strong>No one.</strong> NotifyOS has no server, no analytics SDK, no advertising SDK, and no crash-reporting service that phones home. There is no "we" receiving your data — the app doesn't have a way to send it.</p>
+
+    <h3>Purchases</h3>
+    <p>If you buy NotifyOS, the purchase is handled entirely by Google Play. NotifyOS uses the Play Billing library only to check and restore your purchase state (so a reinstall or new device recognizes you already own the app). This happens over Play's own secure channel between your device and the Play Store app already installed on it — NotifyOS itself still makes no direct network connection.</p>
+
+    <h3>Notification access</h3>
+    <p>NotifyOS requires Notification Access (a standard Android permission) to read and act on your notifications according to the rules you set up. This permission is what lets any notification-management app function; it is not used for anything beyond the rule engine you configure yourself.</p>
+
+    <h3>How to delete your data</h3>
+    <ul>
+      <li><strong>From inside the app:</strong> Settings lets you clear your notification archive, clear learned interaction data, clear trace/rule-log history, and clear media, individually or all at once.</li>
+      <li><strong>By uninstalling:</strong> Removing NotifyOS deletes all of its local data immediately — there is nothing left on any server to separately delete, because nothing was ever sent to one.</li>
+    </ul>
+
+    <h3>Changes to this policy</h3>
+    <p>If this policy changes, the "Last updated" date above will change with it. Given the app's architecture (no network access), the substance of this policy — no data collection — is not expected to change.</p>
+
+    <h3>Contact</h3>
+    <p>Questions about this policy or the app: <a href="mailto:beydemir.technology@gmail.com">beydemir.technology@gmail.com</a></p>
+    <a class="top" href="#top">↑ Back to all policies</a>
+  </section>
+
+  <!-- ───────────────────────── DEAD CODE ───────────────────────── -->
+  <section class="policy" id="deadcode">
+    <div class="policy-head">
+      <img src="assets/icons/deadcode.png" alt="Dead Code icon">
+      <div>
+        <h2>Dead Code — Privacy Policy</h2>
+        <p class="meta">Package <code>com.beydemirtechnology.deadcode</code> &middot; Last updated: August 27, 2026</p>
+      </div>
+    </div>
+
+    <p>
+      This Privacy Policy describes how <strong>DeadCode</strong> ("the App", "we", "us") handles
+      information when you use our Android game. We are committed to being transparent about data
+      practices and protecting your privacy.
+    </p>
+
+
+    <h3>1. Information We Collect</h3>
+    <p>
+      Most of the App runs entirely on your device — game progress, settings, and preferences for
+      the single-player Waves and Sections modes are stored locally using Android's Room database
+      and DataStore and never leave your device.
+    </p>
+    <p>
+      The App also offers an optional <strong>Online multiplayer mode</strong>. If you choose to
+      use it, a limited set of information is sent to our backend (Google Firebase, see Section 2)
+      solely to make online matches work — see Section 3 for exactly what that is. If you never tap
+      "Online" in the app, none of this applies to you.
+    </p>
+
+    <h3>2. Online Multiplayer Mode — Google Firebase</h3>
+    <p>
+      Online mode is built on <strong>Google Firebase</strong> (Firebase Authentication and Cloud
+      Firestore). When you tap "Online" for the first time, the App:
+    </p>
+    <ul>
+      <li>
+        Signs you in with <strong>Firebase Anonymous Authentication</strong> — this assigns your
+        installation a random anonymous ID. It does <em>not</em> require or collect your name,
+        email address, phone number, or any account credentials.
+      </li>
+      <li>
+        Asks you to choose a <strong>display name</strong> (a nickname of your choosing) shown to
+        the opponent you are matched with and on the public online leaderboard. Please avoid
+        entering your real name or other personal information here, since other players and
+        anyone viewing the leaderboard can see it.
+      </li>
+    </ul>
+    <p>While playing an online match, the App stores in Firebase (Cloud Firestore):</p>
+    <ul>
+      <li>Your anonymous ID and chosen display name</li>
+      <li>Temporary matchmaking records (created while searching for or hosting a match, deleted once the match starts or is cancelled)</li>
+      <li>Live match state needed for the match itself (e.g. which words have been typed/transferred) — deleted when the match ends</li>
+      <li>Your online win/loss/matches-played counters, used for the public leaderboard</li>
+    </ul>
+    <p>
+      This data is used solely to enable matchmaking, run the online match, and display the
+      leaderboard. We do not sell this data or use it for advertising. It is processed by Google
+      Firebase in accordance with Google's own privacy and security practices — see
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
+      and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+    </p>
+    <p>
+      To request deletion of your online display name and win/loss statistics, contact us at the
+      address in Section 8 with your in-app display name — we will remove the corresponding
+      Firebase record.
+    </p>
+
+    <h3>3. Third-Party Services — Google AdMob</h3>
+    <p>
+      The App displays rewarded and interstitial advertisements powered by
+      <strong>Google AdMob</strong>. AdMob may collect the following information to serve and
+      measure ads:
+    </p>
+    <ul>
+      <li>Advertising ID (Android Ad ID)</li>
+      <li>Device model, OS version, and language</li>
+      <li>IP address (used to approximate general location)</li>
+      <li>Ad interaction events (impressions, clicks, reward completions)</li>
+    </ul>
+    <p>
+      This data is collected and processed by Google in accordance with their own privacy policy.
+      You can review Google's privacy practices at:
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+        policies.google.com/privacy
+      </a>
+    </p>
+    <p>
+      You can opt out of personalized advertising on your Android device by going to
+      <em>Settings → Google → Ads → Opt out of Ads Personalization</em> or by resetting your
+      Advertising ID.
+    </p>
+
+    <h3>4. Data We Do NOT Collect</h3>
+    <ul>
+      <li>Your real name, email address, phone number, or account credentials</li>
+      <li>Precise GPS location</li>
+      <li>Contacts, camera, or microphone data</li>
+      <li>Payment or financial information</li>
+      <li>Single-player (Waves/Sections) gameplay statistics — those stay on your device only</li>
+    </ul>
+
+    <h3>5. Local Data Storage</h3>
+    <p>
+      The App stores the following data <strong>locally on your device only</strong> (never sent
+      anywhere):
+    </p>
+    <ul>
+      <li>Single-player high scores and wave/section progress</li>
+      <li>Sound and visual preference settings</li>
+      <li>Onboarding and first-game tutorial state</li>
+      <li>Your chosen online display name (also synced to Firebase, see Section 2, so it can be shown to opponents)</li>
+    </ul>
+    <p>
+      This locally-stored data is deleted when you uninstall the App. Data held in Firebase (see
+      Section 2) is not automatically deleted on uninstall — contact us if you'd like it removed.
+    </p>
+
+    <h3>6. Children's Privacy</h3>
+    <p>
+      The App is not directed to children under the age of 13. We do not knowingly collect
+      personal information from children. Online mode only collects an anonymous ID and a
+      self-chosen display name — no verified identity information is required. If you believe a
+      child has provided personal information through the App (e.g. a real name as their display
+      name), please contact us so we can remove it.
+    </p>
+
+    <h3>7. Changes to This Policy</h3>
+    <p>
+      We may update this Privacy Policy from time to time. Any changes will be reflected by an
+      updated date at the top of this page. Continued use of the App after changes are posted
+      constitutes your acceptance of the updated policy.
+    </p>
+
+    <h3>8. Contact</h3>
+    <p>
+      If you have any questions or concerns about this Privacy Policy, or want data tied to your
+      online display name deleted, please contact us at:<br />
+      <a href="mailto:beydemir.technology@gmail.com">beydemir.technology@gmail.com</a>
+    </p>
+
+    <a class="top" href="#top">↑ Back to all policies</a>
+  </section>
+
+  <!-- ───────────────────────── RING RIDER ───────────────────────── -->
+  <section class="policy" id="ringrider">
+    <div class="policy-head">
+      <img src="assets/icons/ringrider.png" alt="Ring Rider icon">
+      <div>
+        <h2>Ring Rider — Privacy Policy</h2>
+        <p class="meta">Package <code>com.ahibaba.ringrider</code> &middot; Last updated: October 29, 2026</p>
+      </div>
+    </div>
+
+    <p class="intro">This Privacy Policy explains how Beydemir Technology ("we", "us") handles information when you play <strong>Ring Rider</strong> (the "Game") on Android. Ring Rider is an offline arcade game: it has no account system and no server of our own.</p>
+
+    <h3>1. Data stored on your device</h3>
+    <p>The Game saves the following only on your device, in the app's private storage:</p>
+    <ul>
+      <li>Level progress, collected coins and unlocked skins</li>
+      <li>Mission and daily-reward progress</li>
+      <li>Game settings such as sound</li>
+    </ul>
+    <p>This data is never sent to us — we have no server to receive it. It is deleted when you uninstall the Game.</p>
+
+    <h3>2. Advertising (Google AdMob)</h3>
+    <p>Ring Rider is free and shows banner and interstitial ads through <strong>Google AdMob</strong>. To serve and measure ads, Google may collect:</p>
+    <ul>
+      <li>Advertising ID (Android Ad ID)</li>
+      <li>Device model, operating system version and language</li>
+      <li>IP address (used to approximate general location)</li>
+      <li>Ad interaction events (impressions and clicks)</li>
+    </ul>
+    <p>This data is collected and processed directly by Google under its own policies: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a> and <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>. You can opt out of personalized ads on your device under <em>Settings → Google → Ads</em>, or reset your Advertising ID there.</p>
+
+    <h3>3. Data we do not collect</h3>
+    <ul>
+      <li>Your name, email address, phone number or any account details — there is no sign-in</li>
+      <li>Precise location, contacts, camera, microphone or files</li>
+      <li>Payment information</li>
+      <li>Your gameplay data — it stays on your device</li>
+    </ul>
+
+    <h3>4. Permissions used</h3>
+    <ul>
+      <li><strong>INTERNET:</strong> needed only to load ads.</li>
+      <li><strong>VIBRATE:</strong> haptic feedback during play.</li>
+    </ul>
+
+    <h3>5. Data sharing and sale</h3>
+    <p>We do not sell personal data. Apart from the advertising data Google AdMob collects as described in section 2, the Game shares nothing with anyone.</p>
+
+    <h3>6. Children's privacy</h3>
+    <p>Ring Rider is not directed to children under the age of 13, and we do not knowingly collect personal information from children.</p>
+
+    <h3>7. Changes to this policy</h3>
+    <p>We may update this policy from time to time. Changes will be reflected by an updated date at the top of this section.</p>
+
+    <h3>8. Contact</h3>
+    <p>Questions about this policy: <a href="mailto:beydemir.technology@gmail.com">beydemir.technology@gmail.com</a></p>
+    <a class="top" href="#top">↑ Back to all policies</a>
+  </section>
 </main>
 
 <footer class="site">
-  <div class="wrap footrow">
-    <div>Odak — Beydemir Technology</div>
-    <div>
-      <a href="index.html">Home</a> &nbsp;&middot;&nbsp;
-      <a href="https://play.google.com/store/apps/details?id=com.beydemir.odak">Google Play</a> &nbsp;&middot;&nbsp;
-      <a href="mailto:beydemir.technology@gmail.com">Contact</a>
-    </div>
+  <div class="wrap foot">
+    <span>&copy; 2026 Beydemir Technology</span>
+    <span>
+      <a href="./">Home</a>
+      <a href="https://play.google.com/store/apps/dev?id=8255260694410669691" target="_blank" rel="noopener">Google Play</a>
+      <a href="https://www.youtube.com/@beydemirTechnology" target="_blank" rel="noopener">YouTube</a>
+    </span>
   </div>
 </footer>
 
