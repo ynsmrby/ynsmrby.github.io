@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policies — Beydemir Technology</title>
-<meta name="description" content="Privacy policies for Beydemir Technology's Android apps: Odak, NotifyOS, Dead Code and Ring Rider.">
+<meta name="description" content="Privacy policies for Beydemir Technology's Android apps: Odak, NotifyOS, Dead Code, Ring Rider and Sentinel.">
 <meta name="google-site-verification" content="d7MsoSQkdF9Dp04asFFYpNcnyYJlKye6csLSpCcddL4" />
 <link rel="icon" href="assets/logo.png" type="image/png">
 
@@ -110,6 +110,7 @@
       <a href="#notifyos"><img src="assets/icons/notifyos.png" alt="">NotifyOS</a>
       <a href="#deadcode"><img src="assets/icons/deadcode.png" alt="">Dead Code</a>
       <a href="#ringrider"><img src="assets/icons/ringrider.png" alt="">Ring Rider</a>
+      <a href="#sentinel"><img src="assets/icons/sentinel.png" alt="">Sentinel</a>
     </div>
     <div class="common">
       <p><strong>Developer:</strong> Beydemir Technology &middot; <strong>Contact:</strong> <a href="mailto:beydemir.technology@gmail.com">beydemir.technology@gmail.com</a></p>
@@ -705,6 +706,75 @@
 
     <h3>8. Contact</h3>
     <p>Questions about this policy: <a href="mailto:beydemir.technology@gmail.com">beydemir.technology@gmail.com</a></p>
+    <a class="top" href="#top">↑ Back to all policies</a>
+  </section>
+
+  <!-- ───────────────────────── SENTINEL ───────────────────────── -->
+  <section class="policy" id="sentinel">
+    <div class="policy-head">
+      <img src="assets/icons/sentinel.png" alt="Sentinel icon">
+      <div>
+        <h2>Sentinel — Privacy Policy</h2>
+        <p class="meta">Package <code>com.beydemirtechnology.sentinel</code> &middot; Last updated: October 30, 2026</p>
+      </div>
+    </div>
+
+    <p class="intro">This Privacy Policy explains how Beydemir Technology ("we", "us") handles information in connection with <strong>Sentinel</strong> (the "App"), an offline security alarm for Android phones. Sentinel watches the phone's own sensors and sounds an alarm on the phone itself. It has no account system and no server of our own.</p>
+
+    <h3>Summary</h3>
+    <p>Sentinel does not collect any data. Everything it records stays on your phone, and you can delete it at any time.</p>
+
+    <h3>1. No network access</h3>
+    <p>Sentinel does not request the <code>INTERNET</code> permission or any other network permission. This is a deliberate, verifiable design choice: without it, Android does not allow the App to open a network connection. You can confirm this in Android Settings &gt; Apps &gt; Sentinel &gt; Permissions, or by inspecting the APK's declared permissions. The App contains no analytics, advertising, crash-reporting or remote-configuration SDK, no Firebase and no account sign-in.</p>
+
+    <h3>2. Data stored on your device</h3>
+    <p>To do its job, Sentinel stores the following only on your device, in the App's private storage:</p>
+    <ul>
+      <li><strong>Event history:</strong> event type, time, mode, risk level, outcome and which trigger fired (for example "Charger disconnected, 7:53 PM, disarmed with PIN")</li>
+      <li><strong>Protection sessions:</strong> start and end time, mode and why the session ended</li>
+      <li><strong>Battery level at the start and end of a session,</strong> used only for the battery figure on the Statistics screen</li>
+      <li><strong>Calibration summary:</strong> a noise level measured from the motion sensor; raw sensor readings are never stored</li>
+      <li><strong>Settings and rules:</strong> your modes and their triggers, schedules, custom mode names, theme and language, the optional contact note shown in Sentinel's notifications, the optional spoken-warning text, the name and file reference of an alarm sound you picked, and the name and address of the one paired Bluetooth device you picked for the Bluetooth trigger</li>
+      <li><strong>PIN verification data:</strong> your PIN itself is never stored, only a salted hash, encrypted with a key held in the Android Keystore</li>
+    </ul>
+    <p>Sentinel never records photos, audio, location, contacts or device identifiers. This data is excluded from Android cloud backup and device-to-device transfer, and it is never sent to us — we have no way to receive it.</p>
+
+    <h3>3. Files you create</h3>
+    <p>Only when you ask for it, Sentinel can export your event history (CSV or PDF report) or a password-encrypted backup of your settings. You choose where the file is saved using Android's file picker. Sentinel sends nothing anywhere; if you choose a cloud folder, that provider's app may upload the file under its own privacy policy. The settings backup never contains your PIN or your event history.</p>
+
+    <h3>4. Permissions used</h3>
+    <ul>
+      <li><strong>Foreground service:</strong> keeps protection running while you are away, with a visible notification for as long as it runs.</li>
+      <li><strong>Notifications:</strong> show the protection status and local alarm alerts.</li>
+      <li><strong>Vibrate and wake lock:</strong> alarm vibration, and keeping monitoring active while the screen is off.</li>
+      <li><strong>Biometric (optional):</strong> unlock with your fingerprint instead of typing your PIN; the PIN always works.</li>
+      <li><strong>Alarms &amp; reminders and run at startup (optional):</strong> start scheduled protection on time, and set the next scheduled start again after the phone restarts. Sentinel never starts protection by itself after a restart.</li>
+      <li><strong>Nearby devices / Bluetooth (optional):</strong> only for the "Bluetooth device disconnects" trigger — to list your paired devices so you can pick one, and to be told when that one device connects or disconnects. Sentinel does not scan for devices and does not use location.</li>
+      <li><strong>Device admin (optional):</strong> only if you turn it on, to lock the screen when the siren starts and to notice wrong unlock attempts while protection is running. Sentinel cannot wipe your phone, change your screen lock or read what you type.</li>
+    </ul>
+    <p>Sentinel does not request camera, microphone, location, contacts or storage permissions. The torch works without camera access, and an alarm sound you pick is opened through Android's file picker for that one file only. The optional spoken warning uses a voice already installed on your phone that works offline.</p>
+
+    <h3>5. Purchases</h3>
+    <p>Sentinel is a paid app with no in-app purchases, subscriptions or ads. The purchase is handled entirely by Google Play under Google's own privacy policy (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>); we do not receive your payment details.</p>
+
+    <h3>6. Data sharing and sale</h3>
+    <p><strong>No one.</strong> We do not collect, share or sell any data from Sentinel.</p>
+
+    <h3>7. How long data is kept and how to delete it</h3>
+    <ul>
+      <li><strong>Automatically:</strong> events older than the period you choose (7, 30, 90 or 365 days; 30 by default) are deleted.</li>
+      <li><strong>From inside the App:</strong> you can delete a single event, all events, or all local data in Settings &gt; PIN &amp; privacy &gt; Privacy &amp; data. Deleting all data also turns off Sentinel's device admin and releases access to your alarm sound file.</li>
+      <li><strong>By uninstalling:</strong> removing Sentinel deletes all of its data. There is nothing to delete on any server, because nothing was ever sent to one.</li>
+    </ul>
+
+    <h3>8. Children's privacy</h3>
+    <p>Sentinel is not directed to children under the age of 13, and we do not knowingly collect personal information from children. Sentinel does not collect personal information from anyone.</p>
+
+    <h3>9. Changes to this policy</h3>
+    <p>If this policy changes, the "Last updated" date above will change with it. Because the App has no network access, the substance of this policy — no data collection — is not expected to change.</p>
+
+    <h3>10. Contact</h3>
+    <p>Questions about this policy or the App: <a href="mailto:beydemir.technology@gmail.com">beydemir.technology@gmail.com</a></p>
     <a class="top" href="#top">↑ Back to all policies</a>
   </section>
 </main>
